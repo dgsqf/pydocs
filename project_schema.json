@@ -1,0 +1,55 @@
+{
+    "test_code\\main.py": [
+        {
+            "name": "test_code\\main.py.foo",
+            "args": [
+                {
+                    "name": "x",
+                    "type_annotation": "int"
+                }
+            ],
+            "return_type_annotation": "str"
+        },
+        {
+            "name": "test_code\\main.py.bar",
+            "args": [
+                {
+                    "name": "self",
+                    "type_annotation": null
+                },
+                {
+                    "name": "x",
+                    "type_annotation": "int"
+                }
+            ],
+            "functions": [
+                {
+                    "name": "test_code\\main.py.hello",
+                    "args": [
+                        {
+                            "name": "self",
+                            "type_annotation": null
+                        },
+                        {
+                            "name": "x",
+                            "type_annotation": "int"
+                        }
+                    ],
+                    "return_type_annotation": null
+                }
+            ]
+        }
+    ],
+    "test_code\\bor\\portal.py": [
+        {
+            "name": "test_code\\bor\\portal.py.portal",
+            "args": [
+                {
+                    "name": "x",
+                    "type_annotation": null
+                }
+            ],
+            "return_type_annotation": "str"
+        }
+    ]
+}
