@@ -71,7 +71,7 @@ class ProjectReader:
                                     args.append({
                                          "name": a.arg,
                                          "type_annotation": a.annotation.id})
-                            if type(fun.returns)==ast.Constant:
+                            if type(fun.returns)==ast.Constant or fun.returns==None:
                                 functions_decl.append({
                             "name": f.name+"."+fun.name,
                             "args": args,
