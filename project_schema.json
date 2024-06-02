@@ -8,6 +8,7 @@
                     "type_annotation": "int"
                 }
             ],
+            "docstring": null,
             "return_type_annotation": "str"
         },
         {
@@ -22,6 +23,7 @@
                     "type_annotation": "int"
                 }
             ],
+            "docstring": null,
             "functions": [
                 {
                     "name": "test_code\\main.py.hello",
@@ -35,6 +37,7 @@
                             "type_annotation": "int"
                         }
                     ],
+                    "docstring": null,
                     "return_type_annotation": null
                 }
             ]
@@ -49,6 +52,7 @@
                     "type_annotation": null
                 }
             ],
+            "docstring": "Opens a portl to a new hellow world",
             "return_type_annotation": "str"
         }
     ]

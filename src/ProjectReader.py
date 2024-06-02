@@ -27,12 +27,14 @@ class ProjectReader:
                           decl[f.name].append({
                             "name": f.name+"."+n.name,
                             "args": args,
+                            "docstring":ast.get_docstring(n),
                             "return_type_annotation": None
                         })  
                         else:
                             decl[f.name].append({
                             "name": f.name+"."+n.name,
                             "args": args,
+                            "docstring":ast.get_docstring(n),
                             "return_type_annotation": n.returns.id
                         })
                     if type(n)==ast.ClassDef:
@@ -75,17 +77,20 @@ class ProjectReader:
                                 functions_decl.append({
                             "name": f.name+"."+fun.name,
                             "args": args,
+                            "docstring":ast.get_docstring(n),
                             "return_type_annotation": None
                                 })  
                             else:
                                 functions_decl.append({
                             "name": f.name+"."+fun.name,
                             "args": args,
+                            "docstring":ast.get_docstring(n),
                             "return_type_annotation": fun.returns.id
                         })
                         
                         decl[f.name].append({
                             "name": f.name+"."+n.name,
                             "args": args,
+                            "docstring":ast.get_docstring(n),
                             "functions": functions_decl})
         return(json.dumps(decl))
